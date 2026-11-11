@@ -18,6 +18,7 @@ import re
 import shutil
 import subprocess
 import sys
+import textwrap
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -89,6 +90,8 @@ def main() -> int:
     for name in ("README.md", "AGENTS.md", "CHANGELOG.md"):
         body = (ROOT / "tools" / "scaffold" / f"{name}.in").read_text(encoding="utf-8")
         for key, value in values.items():
+            if key == "{{DESCRIPTION}}":
+                value = textwrap.fill(value, width=118)  # keeps Markdown lines within the 120-column lint
             body = body.replace(key, value)
         (ROOT / name).write_text(body, encoding="utf-8")
 

@@ -5,7 +5,7 @@ Agents working in `{{REPO}}` follow the Kokeb Labs
 
 ## This repository
 
-- {{DESCRIPTION}} Status, revision and the drivers it uses are in `board.yml`.
+- This is the board `{{BOARD}}`. Its description, status, revision and the drivers it uses are in `board.yml`.
 - The trace in `trace/` is the record of why the board is the way it is. Read [`trace/SCHEMA.md`](trace/SCHEMA.md)
   before you change it. Change an item's `version` when its meaning changes, then resolve every suspect link the
   check reports.
