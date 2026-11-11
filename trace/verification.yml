@@ -1,0 +1,14 @@
+---
+# Verifications: how each requirement is shown to be met, and the evidence. A verification is planned, passed,
+# failed or waived. Passed needs evidence (a file in verification/ or a link); waived needs a reason.
+- id: V-001
+  title: Supply protection bench test
+  method: test
+  verifies:
+    - {id: R-002, ver: 1}
+  procedure: verification/README.md
+  status: planned
+  evidence: []
+  version: 1
+  classification: public
+  example: true

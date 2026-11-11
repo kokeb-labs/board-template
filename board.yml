@@ -1,0 +1,40 @@
+---
+# The board in one file: what it is, how far along it is, what it uses. The portal, the catalogue and the trace check
+# read it. Schema: trace/SCHEMA.md and docs/index.md. `python3 tools/setup.py` fills the {{...}} values in.
+schema: 1
+name: "{{BOARD}}"
+title: "{{TITLE}}"
+description: "{{DESCRIPTION}}"
+org: "{{ORG}}"
+repo: "{{REPO}}"
+
+# concept > design > prototype > verified > released > deprecated
+status: concept
+revision: "A0"          # the revision in work; a released revision gets a signed tag board-<name>-rev<X>
+
+# 0 open, 1 evidence, 2 qualified (docs/evidence-pack.md). Open boards are tier 0 until an evidence pack ships.
+supplier_tier: 0
+
+# Every item in trace/ must carry one of these classifications. An open board allows only "public".
+allowed_classifications: [public]
+
+# What this board is, and what it is not. Keep this wording unless a regulatory adviser has reviewed a change.
+intended_use: >-
+  Evaluation and development kit for electronics and firmware engineers. It is a component supplied to people who
+  build their own products. It is not a medical device and is not intended for diagnostic, therapeutic or
+  patient-connected use.
+
+host: standalone        # standalone | module (carries an MCU) | carrier (takes an MCU module)
+mcu: null               # for host: module, e.g. esp32-s3; the reason belongs in an ADR in docs/adr/
+
+# The Kokeb Labs drivers this board is built around, each with the release it was verified against.
+drivers: []
+# - {repo: kokeb-labs-drivers/driver-bmp581, version: 0.1.0, hardware_yml: docs/hardware.yml}
+
+variants: []
+# - {id: base, description: "Standalone breakout", requirements: all}
+
+licences:
+  software: MIT
+  documentation: MIT
+  hardware: TBD         # decided by an ADR before the first hardware release; no hardware grant until then

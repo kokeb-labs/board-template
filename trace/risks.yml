@@ -1,0 +1,13 @@
+---
+# Risks: what can go wrong at the level of this board, and the requirements that control it. Component and board
+# level only: the integrator's device has its own risk file (ISO 14971), and this one feeds it.
+- id: H-001
+  title: Wrong supply connection destroys the chip
+  hazard: EXAMPLE. A reversed or over-voltage supply reaches the chip.
+  harm: EXAMPLE. The chip fails, or runs outside its limits and gives wrong readings an integrator may not notice.
+  controls:
+    - {id: R-002, ver: 1}
+  status: open
+  version: 1
+  classification: public
+  example: true

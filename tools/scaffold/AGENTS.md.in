@@ -1,0 +1,26 @@
+# AGENTS.md
+
+Agents working in `{{REPO}}` follow the Kokeb Labs
+[agent rules](https://github.com/kokeb-labs/.github/blob/main/standards/agents.md). Read them first.
+
+## This repository
+
+- {{DESCRIPTION}} Status, revision and the drivers it uses are in `board.yml`.
+- The trace in `trace/` is the record of why the board is the way it is. Read [`trace/SCHEMA.md`](trace/SCHEMA.md)
+  before you change it. Change an item's `version` when its meaning changes, then resolve every suspect link the
+  check reports.
+
+## Rules
+
+- Agents propose; a person approves. Do not set a requirement to `approved`, a verification to `passed` or the board
+  `status` forward without a reviewer who did not write the change.
+- Never invent a test result, a measurement or a datasheet value. Cite the datasheet section and page, or leave the
+  value open.
+- Keep `classification: public` on everything. Nothing confidential belongs in an open board.
+- The `intended_use` wording in `board.yml` stays as it is unless a regulatory adviser has reviewed a change.
+
+## Checks before pushing
+
+- `python3 tools/kb_check.py` and `python3 -m unittest discover -s tests`.
+- Markdown: markdownlint with line length 120 (tables and code blocks exempt). YAML: yamllint.
+- Commits are signed off (`git commit -s`).

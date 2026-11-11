@@ -1,0 +1,29 @@
+---
+# Requirements: what the board must do, each testable, each derived from a need or a higher requirement.
+# `derives_from` records the version of the parent it was written against: when the parent changes, this item
+# turns suspect until someone reviews it and updates `ver` (docs: trace/SCHEMA.md).
+- id: R-001
+  title: USB-powered operation
+  statement: >-
+    EXAMPLE. The board shall operate from a 5 V USB supply with no other connection than the USB cable and the
+    host bus.
+  rationale: EXAMPLE. N-001 asks for a ten-minute start; a bench supply or an adapter would break that.
+  kind: system
+  derives_from:
+    - {id: N-001, ver: 1}
+  status: draft
+  version: 1
+  classification: public
+  example: true
+- id: R-002
+  title: Supply protection
+  statement: >-
+    EXAMPLE. The board shall survive a reversed or over-voltage supply connection without damage to the chip.
+  rationale: EXAMPLE. Control for hazard H-001.
+  kind: electrical
+  derives_from:
+    - {id: R-001, ver: 1}
+  status: draft
+  version: 1
+  classification: public
+  example: true

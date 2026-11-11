@@ -1,0 +1,14 @@
+---
+# Needs: what the people who will use or integrate the board want, in their words, with where it came from.
+# Replace the example. A need is never deleted: reject or supersede it, so the history stays.
+- id: N-001
+  title: Evaluate the chip on the bench
+  statement: >-
+    EXAMPLE. An engineer can power the board from a USB port and read the chip with the matching Kokeb Labs driver
+    within ten minutes of unboxing it.
+  stakeholder: Embedded engineer evaluating the part
+  source: {kind: interview, ref: "EXAMPLE: replace with the issue, discussion or note this came from", date: 2026-11-11}
+  status: draft
+  version: 1
+  classification: public
+  example: true

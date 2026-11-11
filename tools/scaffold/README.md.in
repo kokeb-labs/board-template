@@ -1,0 +1,48 @@
+# {{TITLE}}
+
+{{DESCRIPTION}}
+
+[![CI](https://github.com/{{ORG}}/{{REPO}}/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/{{ORG}}/{{REPO}}/actions/workflows/ci.yml)
+
+An open board from [Kokeb Labs](https://github.com/kokeb-labs), built around the Kokeb Labs drivers.
+
+> **Status: concept.** Nothing here has been built or verified on hardware. The status, revision and the drivers
+> this board uses are in [`board.yml`](board.yml); read it before you rely on anything in this repository.
+
+**Intended use.** Evaluation and development kit for electronics and firmware engineers. It is a component supplied
+to people who build their own products. It is not a medical device and is not intended for diagnostic, therapeutic
+or patient-connected use.
+
+## What is here
+
+| Path | What it holds |
+| --- | --- |
+| [`board.yml`](board.yml) | The board in one file: status, revision, intended use, drivers, variants, licences |
+| [`trace/`](trace/SCHEMA.md) | Needs, requirements, risks and verifications, linked by version |
+| [`hardware/`](hardware/README.md) | The KiCad project and reviews |
+| [`mechanical/`](mechanical/README.md) | Enclosure and mounting |
+| [`firmware/`](firmware/README.md) | Example firmware using the drivers |
+| [`manufacturing/`](manufacturing/README.md) | The release package and checklist |
+| [`verification/`](verification/README.md) | Test procedures and results |
+| [`docs/`](docs/index.md) | Documentation, decisions and the [evidence pack](docs/evidence-pack.md) outline |
+
+## Checks
+
+```bash
+python3 tools/kb_check.py --report build    # trace check and coverage report
+python3 -m unittest discover -s tests       # tests of the check
+```
+
+CI runs both, with Markdown and YAML lint and the DCO sign-off check; the one required check is `CI gate / gate`.
+
+## Contributing and support
+
+Read the organisation's [contributing guide](https://github.com/kokeb-labs-open-boards/.github/blob/main/CONTRIBUTING.md).
+Questions and ideas go to [Discussions](https://github.com/orgs/kokeb-labs-open-boards/discussions); report a
+vulnerability privately as the
+[security policy](https://github.com/kokeb-labs-open-boards/.github/blob/main/SECURITY.md) describes.
+
+## Licence
+
+Software and documentation: MIT, see [LICENSE](LICENSE). Hardware design files: see `licences` in
+[`board.yml`](board.yml); until it names a licence, no hardware licence is granted.
