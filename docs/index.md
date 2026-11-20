@@ -10,10 +10,14 @@ This folder is the board's documentation. Start with the sections a reader needs
 
 ## Lifecycle
 
-```mermaid
-flowchart LR
-  concept --> design --> prototype --> verified --> released --> deprecated
-```
+<!-- figure: lifecycle -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="diagrams/lifecycle.dark.svg">
+  <img src="diagrams/lifecycle.svg"
+    alt="Lifecycle of a board in board.yml: concept, design, prototype, verified, released and deprecated,
+    each reached through a gate that a person signs off.">
+</picture>
+<!-- /figure -->
 
 | Status in `board.yml` | Means | Gate to leave it |
 | --- | --- | --- |

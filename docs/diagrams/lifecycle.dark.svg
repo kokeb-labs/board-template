@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="729" viewBox="0 0 640 729" role="img" aria-labelledby="lifecycle-title lifecycle-desc" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="lifecycle-title">Board lifecycle</title>
+<desc id="lifecycle-desc">Lifecycle of a board in board.yml: concept, design, prototype, verified, released and deprecated, each reached through a gate that a person signs off.</desc>
+<defs><marker id="lifecycle-arrow-rail" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6C7889"/></marker></defs>
+<rect x="0.5" y="0.5" width="639" height="728" rx="16" fill="#0E131A" stroke="#283241"/>
+<text x="32" y="54.8" font-size="26" font-weight="700" fill="#E8EDF3">Board lifecycle</text>
+<rect x="32" y="70.8" width="576" height="1" fill="#252F3C"/>
+<path d="M320 114.8 L320 152.8" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#lifecycle-arrow-rail)"/>
+<path d="M320 212.8 L320 250.8" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#lifecycle-arrow-rail)"/>
+<path d="M320 310.8 L320 348.8" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#lifecycle-arrow-rail)"/>
+<path d="M320 408.8 L320 446.8" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#lifecycle-arrow-rail)"/>
+<path d="M320 506.8 L320 544.8" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#lifecycle-arrow-rail)"/>
+<path d="M320 604.8 L320 642.8" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#lifecycle-arrow-rail)"/>
+<rect x="245" y="156.8" width="150" height="52" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<rect x="245" y="164.8" width="4" height="36" rx="2" fill="#94A3B8"/>
+<rect x="245" y="254.8" width="150" height="52" rx="10" fill="#13233A" stroke="#60A5FA" stroke-width="1.4"/>
+<rect x="245" y="262.8" width="4" height="36" rx="2" fill="#60A5FA"/>
+<rect x="245" y="352.8" width="150" height="52" rx="10" fill="#2C2310" stroke="#FBBF24" stroke-width="1.4"/>
+<rect x="245" y="360.8" width="4" height="36" rx="2" fill="#FBBF24"/>
+<rect x="245" y="450.8" width="150" height="52" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<rect x="245" y="458.8" width="4" height="36" rx="2" fill="#4ADE80"/>
+<rect x="245" y="548.8" width="150" height="52" rx="10" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<rect x="245" y="556.8" width="4" height="36" rx="2" fill="#F4B942"/>
+<rect x="245" y="646.8" width="150" height="52" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<rect x="245" y="654.8" width="4" height="36" rx="2" fill="#94A3B8"/>
+<circle cx="320" cy="99.8" r="11" fill="#D2DAE4"/>
+<text x="323" y="187.3" font-size="15" font-weight="700" text-anchor="middle" fill="#E2E8F0">concept</text>
+<text x="323" y="285.3" font-size="15" font-weight="700" text-anchor="middle" fill="#BFDBFE">design</text>
+<text x="323" y="383.3" font-size="15" font-weight="700" text-anchor="middle" fill="#FDE68A">prototype</text>
+<text x="323" y="481.3" font-size="15" font-weight="700" text-anchor="middle" fill="#BBF7D0">verified</text>
+<text x="323" y="579.3" font-size="15" font-weight="700" text-anchor="middle" fill="#F8D27A">released</text>
+<text x="323" y="677.3" font-size="15" font-weight="700" text-anchor="middle" fill="#E2E8F0">deprecated</text>
+</svg>
