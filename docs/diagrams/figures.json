@@ -1,0 +1,19 @@
+{
+  "lifecycle": {
+    "title": "Board lifecycle",
+    "alt": "Lifecycle of a board in board.yml: concept, design, prototype, verified, released and deprecated, each reached through a gate that a person signs off.",
+    "description": "Six states in a row. A board starts in concept, then moves to design, prototype, verified, released and finally deprecated. Each step forward is a gate that a person signs off.",
+    "profile": "detail",
+    "width": 640,
+    "source": "docs/model/lifecycle.state.yml",
+    "sources": [
+      "docs/model/lifecycle.state.yml"
+    ],
+    "kind": "state",
+    "palette": 2,
+    "print": "landscape",
+    "adaptive": true,
+    "twin": false,
+    "font": ""
+  }
+}

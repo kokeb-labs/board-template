@@ -1,0 +1,28 @@
+---
+# Model of the figure 'lifecycle'. Edit this file; `kokeb-docs figures` draws it. Never edit the SVGs.
+kind: state
+id: lifecycle
+title: Board lifecycle
+alt: >-
+  Lifecycle of a board in board.yml: concept, design, prototype, verified, released and deprecated, each reached
+  through a gate that a person signs off.
+reads: >-
+  Six states in a row. A board starts in concept, then moves to design, prototype, verified, released and finally
+  deprecated. Each step forward is a gate that a person signs off.
+print: landscape
+sources:
+  - docs/model/lifecycle.state.yml
+states:
+  - {id: concept, tone: slate}
+  - {id: design, tone: blue}
+  - {id: prototype, tone: amber}
+  - {id: verified, tone: green}
+  - {id: released, tone: brand}
+  - {id: deprecated, tone: slate}
+transitions:
+  - {from: "[*]", to: concept}
+  - {from: concept, to: design}
+  - {from: design, to: prototype}
+  - {from: prototype, to: verified}
+  - {from: verified, to: released}
+  - {from: released, to: deprecated}
